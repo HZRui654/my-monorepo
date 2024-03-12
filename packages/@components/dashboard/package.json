@@ -1,0 +1,12 @@
+{
+  "name": "@component/dashboard",
+  "version": "0.0.0",
+  "description": "dashboard components",
+  "main": "index.ts",
+  "devDependencies": {
+    "vue": "^3.4.21"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.21"
+  }
+}

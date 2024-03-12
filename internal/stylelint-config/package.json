@@ -1,0 +1,19 @@
+{
+  "name": "@draven/stylelint-config",
+  "version": "0.0.0",
+  "description": "stylelint-config",
+  "main": "index.js",
+  "devDependencies": {
+    "postcss-html": "^1.6.0",
+    "postcss-scss": "^4.0.9",
+    "stylelint": "^16.2.1",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-recess-order": "^5.0.0",
+    "stylelint-config-recommended-scss": "^14.0.0",
+    "stylelint-config-recommended-vue": "^1.5.0",
+    "stylelint-selector-bem-pattern": "^4.0.0"
+  },
+  "peerDependencies": {
+    "stylelint": "^16.2.1"
+  }
+}
