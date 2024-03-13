@@ -1,0 +1,13 @@
+dist
+*.js
+*.jsx
+*.ts
+*.tsx
+*.json
+*.md
+*.png
+*.svg
+*.eot
+*.ttf
+*.woff
+*.yaml

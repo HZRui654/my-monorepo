@@ -8,6 +8,12 @@ importers:
 
   .:
     devDependencies:
+      '@draven/eslint-config':
+        specifier: workspace:*
+        version: link:internal/eslint-config
+      '@draven/stylelint-config':
+        specifier: workspace:*
+        version: link:internal/stylelint-config
       eslint:
         specifier: ^8.57.0
         version: 8.57.0

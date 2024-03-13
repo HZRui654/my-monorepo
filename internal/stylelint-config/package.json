@@ -2,6 +2,9 @@
   "name": "@draven/stylelint-config",
   "version": "0.0.0",
   "description": "stylelint-config",
+  "files": [
+    "index.js"
+  ],
   "main": "index.js",
   "devDependencies": {
     "postcss-html": "^1.6.0",
