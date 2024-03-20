@@ -1,6 +1,4 @@
-const { defineConfig } = require('eslint-define-config')
-
-module.exports = defineConfig({
+module.exports = {
   env: {
     browser: true,
     es6: true,
@@ -19,18 +17,22 @@ module.exports = defineConfig({
     parser: '@typescript-eslint/parser'
   },
   rules: {
-    'vue/html-self-closing': ['error', {
-      html: {
-        normal: 'never',
-        void: 'always'
+    'vue/html-self-closing': [
+      'error',
+      {
+        html: {
+          normal: 'never',
+          void: 'always'
+        }
       }
-    }],
-    'vue/multi-word-component-names': ['error', {
-      ignores: [
-        'index'
-      ]
-    }],
+    ],
+    'vue/multi-word-component-names': [
+      'error',
+      {
+        ignores: ['index']
+      }
+    ],
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/ban-ts-comment': 'off'
   }
-})
+}

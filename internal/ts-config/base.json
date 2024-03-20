@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "strict": true,
+    "verbatimModuleSyntax": true,
+    "target": "ES6",
+    "useDefineForClassFields": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist",
+    "sourceMap": false,
+    "allowJs": false,
+    "noUnusedLocals": true,
+    "removeComments": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "types": [],
+    "baseUrl": "../../",
+    "paths": {
+      "@draven/*": ["internal/*"],
+      "@utils": ["packages/utils/index.ts"],
+      "@hooks": ["packages/hooks/index.ts"],
+      "@constants": ["packages/constants/index.ts"],
+      "@components/*": ["packages/components/*/index.ts"],
+      "@dashboard/*": ["packages/dashboard/*"]
+    }
+  }
+}

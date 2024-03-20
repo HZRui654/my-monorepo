@@ -1,3 +1,5 @@
+const nameRegExpString = '[a-z0-9]+(-[a-z0-9]+)*'
+
 module.exports = {
   extends: [
     'stylelint-config-recommended-scss',
@@ -20,21 +22,20 @@ module.exports = {
     'at-rule-no-unknown': [
       true,
       {
-        'ignoreAtRules': ['at-root', 'mixin', 'include', 'extend']
+        ignoreAtRules: ['at-root', 'mixin', 'include', 'extend']
       }
     ],
     'plugin/selector-bem-pattern': {
       preset: 'bem',
-      componentName: '^[a-z0-9]+(-[a-z0-9]+)*$',
+      componentName: `^${nameRegExpString}$`,
       componentSelectors: {
-        initial: '^\\.{componentName}(?:__{componentName})?(?:--{componentName})?$',
-        combined: '^\\.{componentName}(((?:__{componentName})(?:--{componentName})?)|(?:--{componentName}))$'
+        initial: `^\\.{componentName}(?:__${nameRegExpString})?(?:--${nameRegExpString})?$`,
+        combined: `^\\.{componentName}(((?:__${nameRegExpString})(?:--${nameRegExpString})?)|(?:--${nameRegExpString}))$`
       },
       utilitySelectors: '^\\.u-[a-zA-z]+$'
     },
     'selector-class-pattern': null,
-    'value-keyword-case': null,
-    'color-hex-case': 'lower'
+    'value-keyword-case': null
   },
   cache: true
 }

@@ -1,6 +1,5 @@
 node_modules
 dist
-.vscode
 .github
 .husky
 *-lock.yaml

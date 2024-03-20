@@ -1,0 +1,11 @@
+{
+  "name": "@draven/ts-config",
+  "version": "0.0.0",
+  "description": "typescript config",
+  "private": true,
+  "files": [
+    "base.json",
+    "node.json",
+    "vue-app.json"
+  ]
+}
